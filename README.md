@@ -11,7 +11,7 @@ Requires **Python 3.9+** (tested on 3.14). Works on Windows, macOS and Linux.
 Clone into your dataset folder as `tools/`, so commands read naturally:
 
 ```bash
-git clone <repo-url> tools
+git clone https://github.com/eaglePB2/trash-dataset-classification-pipeline tools
 ```
 
 ```bash
