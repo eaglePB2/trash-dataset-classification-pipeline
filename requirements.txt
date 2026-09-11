@@ -1,0 +1,22 @@
+# Core pipeline (rebuild.py, diagnose.py, verify.py, contact_sheet.py).
+# These are all you need unless you are running the CLIP pre-sort.
+pillow>=11
+pillow-heif>=1.0        # HEIC/HEIF sources, including ones misnamed .jpg
+rawpy>=0.24             # DNG / RAW sources; drop if you have none
+imagehash>=4.3          # perceptual hashing for deduplication
+numpy>=2.0
+huggingface-hub>=1.0    # upload, squash, Hub integrity checks
+
+# review_duplicates.py additionally needs tkinter, which ships with CPython on
+# Windows and macOS. On Debian/Ubuntu: apt install python3-tk
+
+# presort.py only. Large download -- install just for the CLIP pre-sort.
+# For GPU, install torch from the PyTorch index matching your CUDA version
+# first, e.g.:
+#   pip install --index-url https://download.pytorch.org/whl/cu126 torch torchvision
+# torch>=2.4
+# transformers>=4.40
+
+# Versions this pipeline was last run against, for reference:
+#   pillow 12.2.0 · pillow-heif 1.6.0 · rawpy 0.27.1 · imagehash 4.3.2
+#   numpy 2.5.0 · huggingface-hub 1.30.0 · torch 2.14.0+cu126 · transformers 5.17.0
