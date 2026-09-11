@@ -91,7 +91,7 @@ def get_float(name, default):
 DATASET_ROOT = Path(get_str("DATASET_ROOT", ".")).expanduser().resolve()
 
 # --- Hub -------------------------------------------------------------------
-REPO_ID = get_str("REPO_ID", "Gameten/Trash_Classification")
+REPO_ID = get_str("REPO_ID", "eaglepb2/Trash_Classification")
 REPO_TYPE = get_str("REPO_TYPE", "dataset")
 
 # --- Published image format ------------------------------------------------
